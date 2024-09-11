@@ -1,0 +1,88 @@
+/* Calendar.css */
+.react-calendar {
+    background-color: #1C1C1C; /* Dark background similar to the image */
+    border: none;  /* Remove border */
+    border-radius: 8px;
+    padding: 10px;
+    color: white; /* Text color */
+  }
+  
+  .react-calendar__tile {
+    background: none;
+    color: #F5F5F5; /* Light text color */
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+  }
+  
+  .react-calendar__tile--now {
+    background: rgba(255, 255, 255, 0.2); /* Highlight current day */
+    border-radius: 6px;
+  }
+  
+  .react-calendar__tile--active {
+    background: rgba(255, 255, 255, 0.3); /* Highlight selected day */
+    color: white;
+  }
+  
+  .react-calendar__navigation button {
+    background-color: transparent;
+    color: #cacaca; /* Light text color for navigation buttons */
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .react-calendar__navigation button:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .react-calendar__month-view__days__day--weekend {
+    color: rgba(255, 255, 255, 0.8); /* Slightly brighter for weekend days */
+  }
+  
+  .react-calendar__month-view__weekdays {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6); /* Light color for weekday labels */
+  }
+  
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: rgba(255, 255, 255, 0.3); /* Dim color for days from neighboring months */
+  }
+  /* Calendar.css */
+
+/* Style for the year in the calendar navigation */
+.react-calendar__navigation__label {
+  background-color: rgba(255, 255, 255, 0.1);  /* Same background as months */
+  color: #fff; /* Make the text white to match */
+  padding: 0.5rem 1rem; /* Add padding similar to month buttons */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.2rem; /* Adjust font size */
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__navigation__label:hover {
+  background-color: rgba(255, 255, 255, 0.2);  /* Add hover effect */
+}
+
+.react-calendar__navigation__label:focus {
+  background-color: rgba(255, 255, 255, 0.3);  /* Highlight selected when focused */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Style for the year navigation buttons (<<, <, >, >>) */
+.react-calendar__navigation__arrow {
+  background-color: rgba(255, 255, 255, 0.1); /* Match background color */
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.react-calendar__navigation__arrow:hover {
+  background-color: rgba(255, 255, 255, 0.2);  /* Hover effect for arrows */
+}
